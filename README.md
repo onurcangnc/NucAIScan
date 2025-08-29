@@ -58,18 +58,18 @@ python -m ffufai targetdomain.com
 
 ### With backend override
 ```bash
-python -m ffufai example.com --backend php
+python -m ffufai target.com --backend php
 ```
 -> Only Nuclei templates related to PHP backend are selected.
 
 ### With backend override + AI mode
 ```bash
-python -m ffufai example.com --backend php --ai
+python -m ffufai target.com --backend php --ai
 ```
 -> Forces backend as PHP and applies AI-powered recommendation on all Nuclei templates to reduce the template set for a more precise Nuclei scan.
 
 ```bash
-python -m ffufai example.com --backend wordpress --ai
+python -m ffufai target.com --backend wordpress --ai
 ```
 
 -> Backend is selection forced to WordPress and AI decides on the remaining WordPress template candidates and result will be more precise template set according to the application & endpoints and AI.
@@ -83,7 +83,7 @@ python -m ffufai target.com --ai
 ## Example Report
 Sample HTML output (with severity coloring):
 
-![Report Screenshot](reports/example.png)
+![Report Screenshot](reports/ex.png)
 
 ## SW Design Principles
 - **SOLID** modular design:
