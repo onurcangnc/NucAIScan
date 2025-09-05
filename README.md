@@ -1,10 +1,10 @@
-# 🔍 NucAIScan
+# NucAIScan
 
 **NucAIScan** is an **AI-assisted Dynamic Application Security Testing (DAST) pipeline** that automates reconnaissance, fuzzing, and vulnerability scanning.
 
 It chains **Subfinder, httpx, Subzy, FFUF (heuristic fuzzing), and Nuclei** with optional **AI-powered template selection** and automated HTML reporting.
 
-## ✨ Features
+## Features
 - **Subdomain discovery** with Subfinder  
 - **Alive check** with httpx (HTTPS-first)  
 - **Subdomain takeover detection** with Subzy  
@@ -20,7 +20,7 @@ It chains **Subfinder, httpx, Subzy, FFUF (heuristic fuzzing), and Nuclei** with
   - Plain-text fallback for small scans  
 
 
-## 🏗️ Architecture
+## Architecture
 
 ### Use Case Diagram
 ![Use Case Diagram](diagrams/use_case.png)
@@ -32,7 +32,7 @@ It chains **Subfinder, httpx, Subzy, FFUF (heuristic fuzzing), and Nuclei** with
 ![Activity Diagram](diagrams/activity.png)
 
 
-## 📦 Installation
+## Installation
 ```bash
 git clone https://github.com/onurcangnc/NucAIScan.git
 cd NucAIScan
@@ -94,10 +94,10 @@ Sample HTML output (with severity coloring):
 - **Clean architecture**: Each module has a single responsibility  
 - **Extendable**: Easily add new scanners or wordlists  
 
-## 📌 Roadmap
+## Roadmap
 - [ ] Elasticsearch integration  
 - [ ] AI-powered false positive Nuclei scan filtering & severity scoring
 - [ ] Docker container for one-line deployment  
 
-## 📜 License
+## License
 MIT License © Onurcan Genç
